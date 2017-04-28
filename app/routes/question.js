@@ -13,6 +13,10 @@ export default Ember.Route.extend({
       });
       question.save();
       this.transitionTo('question');
+    },
+    deleteQuestion(question) {
+      question.destroyRecord();
+      this.transitionTo('index');
     }
   }
 });

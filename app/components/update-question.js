@@ -11,7 +11,7 @@ export default Ember.Component.extend({
         name: this.get('name'),
         topic: this.get('topic'),
         question: this.get('newQuestion'),
-        desc: this.get('desc'),
+        desc: this.get('desc')
       };
       this.set('isFormShowing', false);
       this.sendAction('updateQuestion', question, params);
