@@ -2,6 +2,10 @@
 
 Texas Coders, is a forum for programmers in the lone star state only. As Texans who program, with the help of the Texas Coders forum, we can work on building a strong community to help develop and grow in our programming pursuits. The style of the forum is broken down into a Q/A format, where a user can ask a question and have other users answer their question.
 
+## Live Website
+
+http://ryanjones.epicodus.projects.s3-website-us-west-2.amazonaws.com/
+
 ## Planning
 
 1. Configuration/Dependencies
