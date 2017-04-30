@@ -1,12 +1,12 @@
 <div class="row">
   <div class="col-md-1"></div>
-  <div class="col-md-5 custom-height">
+  <div class="col-md-5 custom-height custom-well">
     <div class="welcome-message-div">
       <h3>Welcome to Texas Coders</h3>
       <p>Texas Coders, is a forum for programmers in the lone star state only. As Texans who program, with the help of the Texas Coders forum, we can work on building a strong community to help develop and grow in our programming pursuits. The style of the forum is broken down into a Q/A format, where a user can ask a question and have other users answer their question.</p>
     </div>
   </div>
-  <div class="col-md-5 custom-height">
+  <div class="col-md-5 custom-height custom-well">
     <div class="what-we-provide">
       <h3>What our community provides</h3>
       <ul class="random-ul-list">
@@ -19,26 +19,23 @@
   <div class="col-md-1"></div>
 </div>
 <div class="block-image">
-  <h2>Loyalty, Support, Family..</h2>
+  <h2>Community, Support, Family..</h2>
 </div>
-
-  <div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-5 question-block custom-height">
-      <div class="all-questions">
-        <h3>All Questions</h3>
-        <ul>
-          {{#each model.questions as |question|}}
-            {{question-tile question=question}}
-          {{/each}}
-        </ul>
-      </div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-5 question-block custom-height custom-well">
+    <div class="all-questions">
+      <h3>Recent Questions</h3>
+      {{#each model.questions as |question|}}
+        {{question-tile question=question}}
+      {{/each}}
     </div>
-    <div class="col-md-5 question-block custom-height">
-      <div class="new-question">
-        <h3>Have a question?</h3>
-        {{new-question saveQuestion="saveQuestion"}}
-      </div>
-    </div>
-    <div class="col-md-1"></div>
   </div>
+  <div class="col-md-5 question-block custom-height custom-well">
+    <div class="new-question">
+      <h3>Have a question?</h3>
+      {{new-question saveQuestion="saveQuestion"}}
+    </div>
+  </div>
+  <div class="col-md-1"></div>
+</div>

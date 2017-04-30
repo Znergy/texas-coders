@@ -1,6 +1,6 @@
 .block-image { background-image: url('../bg.jpg'); background-position: center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; height: 250px; }
-body { background-color: green;}
-.navigation {  text-align: center; list-style-type: none; text-align: center; margin-top: 36px; }
+body { background-color: #333; height: 100%; }
+.navigation {  text-align: center; list-style-type: none; text-align: center; margin-top: 47px; }
 .navigation li { display: inline; padding-left: 10px; font-size: 20px; }
 .navigation li a { color: #333; }
 .navigation li a:hover { color: #ccc; text-decoration: none; }
@@ -10,8 +10,29 @@ div.footer h3 { text-align: center; font-size: 30px; }
 textarea { resize: none; }
 .container-fluid { padding-left: 0px; padding-right: 0px; }
 .block-image h2 { text-align: center; padding-top: 95px; font-size: 49px; color: #fff; text-shadow: 5px 4px 3px #000; }
-.custom-height { min-height: 190px; border: 2px solid #000; margin-left: 5px; }
+.custom-height { min-height: 200px; margin-left: 5px; }
 .custom-height h3 { text-align: center; font-family: sans-serif;}
 .question-block { text-align: center; margin-top: 20px; margin-bottom: 20px; }
+h3 { font-size: 30px; }
 .all-questions li { text-align: left; }
-.new-question { margin-top: 20px; margin-bottom: 20px;}
+.all-questions { margin-top: 30px; margin-bottom: 30px; }
+.new-question { margin-top: 30px; margin-bottom: 30px;}
+.question-list-div { background-color: #ccc; border-radius: 4px; }
+.question-list-div { margin-top: 24px;}
+.question-list-div h5 { text-align: center; color: #fff; background-color: #333; padding-top: 3px; padding-bottom: 3px; font-size: 20px;}
+.question-list-div p { font-size: 17px; }
+footer { text-align: right; }
+footer span { padding-right: 8px; padding-bottom: 5px; }
+.btn { font-size: 17px; }
+div.footer.well { margin-bottom: 0px; margin-top: 20px; }
+.custom-well { background-color: #F5F5F5; border: 1px solid #e3e3e3; border-radius: 4px; }
+.add-question-btn { margin-top: 10px; }
+.question-info .form-group { width: 90%; }
+.question-info { margin-top: 30px; margin-bottom: 30px; padding-left: 15px; }
+#newAnswerForm { text-align: left; padding-left: 20px;}
+.new-answer .form-group { width:90%; }
+.new-answer { margin-top: 20px; margin-bottom: 20px; text-align: center;}
+.answers-list-div button { font-size: 11px; }
+.specific-answer { margin-top: 20px;}
+.question-info .btn-danger { margin-top: 5px; }
+.row { margin-left: auto; margin-right: auto;}

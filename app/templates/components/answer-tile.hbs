@@ -1,1 +1,5 @@
-<li>{{answer.reply}} - {{answer.name}} <button class="btn btn-danger"{{action 'deleteAnswer' answer}}>Delete</button></li>
+<div class="specific-answer well">
+    <h4>{{answer.name}}</h4>
+    <p>{{answer.reply}}</p>
+    <button class="btn btn-danger"{{action 'deleteAnswer' answer}}>Delete</button>
+</div>
