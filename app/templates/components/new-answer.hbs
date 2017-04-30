@@ -1,0 +1,11 @@
+{{#if isFormShowing}}
+  <form id="newAnswerForm" action="index.html" method="post">
+    <label for="name">Name</label>
+    {{input value=name id=nameInput}}
+    <label for="reply">Reply</label>
+    {{input value=reply id=replyInput}}
+    <button class="btn btn-success"{{action 'addAnswer'}}>Post Answer</button>
+  </form>
+{{else}}
+  <button class="btn btn-primary"{{action 'showForm'}}>Write Answer</button>
+{{/if}}

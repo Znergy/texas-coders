@@ -8,8 +8,8 @@
   {{input value=question id=questionInput}}
   <label for="desc">Description</label>
   {{input value=desc id=descInput}}
-  <button {{action 'saveQuestion'}}>Post Question</button>
+  <button class="btn btn-success"{{action 'saveQuestion'}}>Post Question</button>
 </form>
 {{else}}
-  <button {{action 'showForm'}}>Add Question</button>
+  <button class="btn btn-primary"{{action 'showForm'}}>Add Question</button>
 {{/if}}

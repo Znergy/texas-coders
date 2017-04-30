@@ -4,5 +4,6 @@ export default DS.Model.extend({
   name: DS.attr(),
   topic: DS.attr(),
   question: DS.attr(),
-  desc: DS.attr()
+  desc: DS.attr(),
+  answers: DS.hasMany('answer', { async: true })
 });

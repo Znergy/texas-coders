@@ -11,4 +11,26 @@
   <div class="delete-question">
     {{delete-question question=model deleteQuestion="deleteQuestion"}}
   </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="new-answer">
+        <h2>Add an Answer</h2>
+        {{new-answer question=model addAnswer="addAnswer"}}
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="answers-list-div">
+        <h2>Answers</h2>
+        {{#if model.answers}}
+          <ul class="answer-ul">
+            {{#each model.answers as |answer|}}
+              {{answer-tile answer=answer deleteAnswer="deleteAnswer"}}
+            {{/each}}
+          </ul>
+        {{else}}
+          <h3>No answers to show</h3>
+        {{/if}}
+      </div>
+    </div>
+  </div>
 </div>

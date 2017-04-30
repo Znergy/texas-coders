@@ -1,15 +1,15 @@
 {{#if isFormShowing}}
 <form id="updateQuestionForm" action="index.html" method="post">
   <label for="name">Name</label>
-  {{input value=name id=nameInput}}
+  {{input value=name placeholder=question.name id=nameInput}}
   <label for="topic">Topic</label>
-  {{input value=topic id=topicInput}}
+  {{input value=topic placeholder=question.topic id=topicInput}}
   <label for="question">Question</label>
-  {{input value=newQuestion id=questionInput}}
+  {{input value=newQuestion placeholder=question.question id=questionInput}}
   <label for="desc">Description</label>
-  {{input value=desc id=descInput}}
-  <button {{action 'updateQuestion' question}}>Save</button>
+  {{input value=desc placeholder=question.desc id=descInput}}
+  <button class="btn btn-success"{{action 'updateQuestion' question}}>Save</button>
 </form>
 {{else}}
-  <button {{action 'showForm'}}>Update Question</button>
+  <button class="btn btn-primary"{{action 'showForm'}}>Update Question</button>
 {{/if}}
