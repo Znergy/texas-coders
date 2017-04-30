@@ -1,7 +1,17 @@
-body { background-image: url('../bg.jpg'); background-position: center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover;}
+.block-image { background-image: url('../bg.jpg'); background-position: center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; height: 250px; }
+body { background-color: green;}
 .navigation {  text-align: center; list-style-type: none; text-align: center; margin-top: 36px; }
 .navigation li { display: inline; padding-left: 10px; font-size: 20px; }
 .navigation li a { color: #333; }
 .navigation li a:hover { color: #ccc; text-decoration: none; }
 div.header h1 { text-align: center; font-size: 50px; font-family: fantasy; }
 div.footer h3 { text-align: center; font-size: 30px; }
+#newQuestionForm { margin-top: 20px; text-align: left; }
+textarea { resize: none; }
+.container-fluid { padding-left: 0px; padding-right: 0px; }
+.block-image h2 { text-align: center; padding-top: 95px; font-size: 49px; color: #fff; text-shadow: 5px 4px 3px #000; }
+.custom-height { min-height: 190px; border: 2px solid #000; margin-left: 5px; }
+.custom-height h3 { text-align: center; font-family: sans-serif;}
+.question-block { text-align: center; margin-top: 20px; margin-bottom: 20px; }
+.all-questions li { text-align: left; }
+.new-question { margin-top: 20px; margin-bottom: 20px;}

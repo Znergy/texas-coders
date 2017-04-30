@@ -1,9 +1,13 @@
 {{#if isFormShowing}}
   <form id="newAnswerForm" action="index.html" method="post">
-    <label for="name">Name</label>
-    {{input value=name id=nameInput}}
-    <label for="reply">Reply</label>
-    {{input value=reply id=replyInput}}
+    <div class="form-group">
+      <label for="name">Name</label>
+      {{input class="form-control" value=name id=nameInput required="required"}}
+    </div>
+    <div class="form-group">
+      <label for="reply">Reply</label>
+      {{input class="form-control" value=reply id=replyInput required="required"}}
+    </div>
     <button class="btn btn-success"{{action 'addAnswer'}}>Post Answer</button>
   </form>
 {{else}}

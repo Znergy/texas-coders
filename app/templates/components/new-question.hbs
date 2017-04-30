@@ -1,13 +1,21 @@
 {{#if isFormShowing}}
 <form id="newQuestionForm" action="index.html" method="post">
-  <label for="name">Name</label>
-  {{input value=name id=nameInput}}
-  <label for="topic">Topic</label>
-  {{input value=topic id=topicInput}}
-  <label for="question">Question</label>
-  {{input value=question id=questionInput}}
-  <label for="desc">Description</label>
-  {{input value=desc id=descInput}}
+  <div class="form-group">
+    <label for="name">Name</label>
+    {{input class="form-control" value=name id=nameInput}}
+  </div>
+  <div class="form-group">
+    <label for="topic">Topic</label>
+    {{input class="form-control" value=topic id=topicInput}}
+  </div>
+  <div class="form-group">
+    <label for="question">Question</label>
+    {{input class="form-control" value=question id=questionInput}}
+  </div>
+  <div class="form-group">
+    <label for="desc">Description</label>
+    {{textarea class="form-control" value=desc id=descInput rows="3"}}
+  </div>
   <button class="btn btn-success"{{action 'saveQuestion'}}>Post Question</button>
 </form>
 {{else}}

@@ -1,13 +1,21 @@
 {{#if isFormShowing}}
 <form id="updateQuestionForm" action="index.html" method="post">
-  <label for="name">Name</label>
-  {{input value=name placeholder=question.name id=nameInput}}
-  <label for="topic">Topic</label>
-  {{input value=topic placeholder=question.topic id=topicInput}}
-  <label for="question">Question</label>
-  {{input value=newQuestion placeholder=question.question id=questionInput}}
-  <label for="desc">Description</label>
-  {{input value=desc placeholder=question.desc id=descInput}}
+  <div class="form-group">
+    <label for="name">Name</label>
+    {{input class="form-control" value=name placeholder=question.name id=nameInput required="required"}}
+  </div>
+  <div class="form-group">
+    <label for="topic">Topic</label>
+    {{input class="form-control" value=topic placeholder=question.topic id=topicInput required="required"}}
+  </div>
+  <div class="form-group">
+    <label for="question">Question</label>
+    {{input class="form-control" value=newQuestion placeholder=question.question id=questionInput required="required"}}
+  </div>
+  <div class="form-group">
+    <label for="desc">Description</label>
+    {{textarea class="form-control" value=desc id=descInput rows="3" placeholder="Type any changes here." required="required"}}
+  </div>
   <button class="btn btn-success"{{action 'updateQuestion' question}}>Save</button>
 </form>
 {{else}}
